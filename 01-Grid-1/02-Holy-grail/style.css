@@ -21,17 +21,27 @@ body {
 .kontejner{
 	display: grid;
 	grid-template-columns: 300px 1fr 200px;
-	grid-template-rows: 25% 70% 15%;
+	grid-template-rows: 150px auto 80px;
 	gap: 10px;
 }
 
 .hlavicka{
 	grid-column: 1 / span 3;
+	grid-row: 1 / 2;
+}
+
+.levy{
+	grid-column: 1;
+	grid-row: 2;
 }
 
 .hlavni{
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+}
+.pravy{
+	grid-column: 3;
+	grid-row: 2;
 }
 
 .paticka{
