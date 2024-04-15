@@ -4,7 +4,39 @@ html { box-sizing: border-box; }
 
 body {
 	font-family: sans-serif;
+	width: 500px;
+	margin: 200px auto;
+	border: 1px solid gray;
 }
 
 /* ---------------------------------------------------- */
+h1{
+	font-size: 40px;
+	text-align: center;
+}
 
+.kalendar{
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	grid-template-rows: repeat(6,1fr);
+	gap: 5px;
+	padding: 20px;
+}
+
+li{
+	border: 1px solid gray;
+	list-style: none;
+	text-align: center;
+	padding: 15px;
+}
+
+.zahlavi{
+	background-color: rgba(255, 68, 0, 0.824);
+	color: white;
+}
+
+.predchozi,
+.nasledujici{
+	background-color: rgb(161, 160, 160);
+	color: rgb(233, 230, 230);
+}
