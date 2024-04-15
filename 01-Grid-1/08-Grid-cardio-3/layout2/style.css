@@ -26,5 +26,8 @@ nav {
 
 .grid {
 	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
+	display: grid;
+	grid-template-columns: 150px auto 100px;
+	grid-template-rows: 150px auto 150px;
 }
 
