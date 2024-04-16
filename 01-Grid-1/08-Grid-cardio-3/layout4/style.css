@@ -26,5 +26,35 @@ nav {
 
 .grid {
 	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
+	display: grid;
+	grid-template-columns: 200px 1fr 150px;
+	grid-template-rows: 150px 1fr 100px;;
+	gap: 5px;
+}
+nav{
+	grid-column: 1;
+	grid-row: 1/4;
+	padding: 20px;
 }
 
+header{
+	grid-column: 2/span 2;
+	grid-row: 1;
+	padding: 20px;
+}
+
+article{
+	grid-column: 2;
+	grid-row: 2;
+	padding: 20px;
+}
+footer{
+	grid-column: 2;
+	grid-row: 3;
+	padding: 20px;
+}
+aside{
+	grid-column: 3;
+	grid-row: 2/span2;
+	padding: 20px;
+}
