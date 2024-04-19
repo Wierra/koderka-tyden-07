@@ -11,9 +11,22 @@ body {
 /*
 CSS Selektory:
 
-::first-letter			první písmeno
-::first-line				první řádek
+::first-letter		první písmeno
+::first-line		první řádek
 
-::before						uvnitř prvku, před obsahem
-::after							uvnitř prvku, za obsahem
+::before	vnitř prvku, před obsahem
+::after		uvnitř prvku, za obsahem
 */
+
+p::first-letter{
+	font-size: 50px;
+	line-height: 1;
+	color: blue;
+	font-weight: 600;
+	float: left;
+	margin-right: 15px;;
+}
+
+p::first-line{
+	color: lightseagreen;
+}
