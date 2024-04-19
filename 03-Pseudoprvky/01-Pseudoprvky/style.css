@@ -18,7 +18,7 @@ CSS Selektory:
 ::after		uvnitř prvku, za obsahem
 */
 
-p::first-letter{
+/* p::first-letter{
 	font-size: 50px;
 	line-height: 1;
 	color: blue;
@@ -29,4 +29,23 @@ p::first-letter{
 
 p::first-line{
 	color: lightseagreen;
+} */
+
+h2::before{
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: lightskyblue;
+	padding: 5px;
+	margin-right: 10px;
+	border: 2px solid rgb(19, 19, 61);
+}
+
+h2::after{
+	content: ":)";
+	background-color: aqua;
+	color: darkcyan;
+	padding: 15px;
 }
